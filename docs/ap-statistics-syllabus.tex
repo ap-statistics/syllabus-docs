@@ -1,0 +1,369 @@
+\documentclass[12pt,fleqn]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={AP® Statistics Syllabus},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{AP\textsuperscript{®} Statistics Syllabus}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{}
+    \preauthor{}\postauthor{}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{2019--2020}
+
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+%Allow for more levels in bullet lists
+%https://github.com/Witiko/markdown/issues/2
+%https://tex.stackexchange.com/questions/41408/a-five-level-deep-list
+\usepackage{enumitem}
+\setlistdepth{20}
+\renewlist{itemize}{itemize}{20}
+% initially, use dots for all levels
+\setlist[itemize]{label=$\cdot$}
+
+% customize the first 3 levels
+\setlist[itemize,1]{label=\textbullet}
+\setlist[itemize,2]{label=--}
+\setlist[itemize,3]{label=*}
+
+\usepackage{multicol}
+
+\usepackage{bibentry}
+
+% \setcounter{tocdepth}{0}
+% \setcounter{secnumdepth}{0}
+
+%YAML in index.Rmd: subparagraph: yes
+%https://stackoverflow.com/questions/42916124/not-able-to-use-titlesec-with-markdown-and-pandoc
+\usepackage{titlesec}
+\titleformat{\section}
+   {\normalfont\fontsize{18}{20}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+   {\normalfont\fontsize{16}{18}\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+   {\normalfont\fontsize{14}{16}\bfseries}{\thesubsubsection}{1em}{}
+% \titleformat{\subsubsection}
+%    {\normalfont\fontsize{14}{16}\bfseries\sffamily}{}{1em}{}
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkbordercolor = {white},
+    linkcolor = {black},
+    citecolor = {black},
+    urlcolor = {blue},
+    citecolor = {blue},
+    anchorcolor = {blue},
+    bookmarksopen = false,
+    bookmarksdepth=4
+}
+
+
+
+%https://bookdown.org/yihui/bookdown/latex-index.html
+%\usepackage{makeidx}
+%\makeindex
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\hypertarget{course-description}{%
+\section{Course Description}\label{course-description}}
+
+AP\textsuperscript{®} Statistics is a one-year course that covers descriptive statistics, probability theory, and statistical inference. In addition to TI-84 calculator sessions that align with the AP\textsuperscript{®} Statistics curriculum, this course will also include supplementary R lab sessions to introduce students to statistical programming.
+
+\hypertarget{contact-information}{%
+\section{Contact Information}\label{contact-information}}
+
+\textbf{Teacher}: Mr.~Li
+
+\textbf{Course Website}: \url{https://ap-statistics.github.io}
+
+\textbf{Office Hours}: \url{https://ap-statistics.github.io/\#officehours}
+
+\begin{itemize}
+\tightlist
+\item
+  You are welcome to stop by anytime during scheduled office hours without an appointment.
+\item
+  If I need to reschedule office hours, I will send an e-mail to the class.
+\item
+  If you cannot make it to my office hours, please \href{https://ap-statistics.github.io/\#officehours}{schedule an appointment}. If none of the time slots work for you, check with me after class so we can arrange a time to meet.
+\end{itemize}
+
+\hypertarget{course-objectives}{%
+\section{Course Objectives}\label{course-objectives}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Develop mastery in descriptive and inference statistics.
+\item
+  Learn all relevant TI-84 calculator functions for the AP exam.
+\item
+  Gain exposure to statistical programming using R.
+\end{enumerate}
+
+\hypertarget{resources}{%
+\section{Resources}\label{resources}}
+
+\hypertarget{course-textbook}{%
+\subsection{Course Textbook}\label{course-textbook}}
+
+Diez, D., Cetinkaya-Rundel, M., Dorazio, L., Barr, C. (2019).
+\emph{Advanced High School Statistics}. 2nd ed.~Creative Common
+License. URL:
+\url{https://www.openintro.org/stat/textbook.php}.
+
+\hypertarget{graphing-calculator}{%
+\subsection{Graphing Calculator}\label{graphing-calculator}}
+
+Required: Choose one of the Texas Instruments TI-83/84 series (including TI-83 Plus, TI-84 Plus, TI-84 Silver Edition, TI-84 Plus CE)
+
+I will be using \textbf{TI-84 Plus} for in-class demonstrations, but any one of the TI-83/84 models should be similar enough to follow along in class. Check this \href{https://brownmath.com/ti83/diff8384.htm\#PlusSilver}{link} to see the differences among the TI-83/84 models.
+
+\hypertarget{ap-classroom}{%
+\subsection{AP Classroom}\label{ap-classroom}}
+
+Visit \url{https://collegeboard.org/joinapclass} for instructions on joining the AP class section for this class.
+
+\begin{itemize}
+\item
+  Log onto \url{https://myap.collegeboard.org} with your College Board account.
+\item
+  Enter the join code that you will receive in class.
+\end{itemize}
+
+\hypertarget{recommended-reference}{%
+\subsection{Recommended Reference}\label{recommended-reference}}
+
+Sternstein, M. (2017). \emph{Barron's AP Statistics}. 9th ed.
+Hauppauge, NY: Barron's Educational Series, Inc.
+
+If you would like more practice and preparation for the AP exam, the text above is an excellent reference. However, you are not required to purchase this text.
+
+\hypertarget{ap-exam}{%
+\section{AP Exam}\label{ap-exam}}
+
+\href{https://apcentral.collegeboard.org/courses/exam-dates-and-fees/exam-dates-2020}{2020 AP Exam Schedule}
+
+\begin{itemize}
+\tightlist
+\item
+  AP Statistics: May 15, 2020 (noon local time)
+\end{itemize}
+
+\href{https://apcentral.collegeboard.org/courses/ap-statistics/exam}{Exam Format}
+
+\begin{itemize}
+\item
+  Section 1 (50\%): 45 multiple-choice questions (1 hour, 30 min.)
+\item
+  Section 2 (50\%): 6 free-response questions
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Part A: 5 questions with focus areas on data collection, data exploration, probability and sampling distributions, inference. One of the five questions will involve on two or more of the focus areas.
+  \item
+    Part B: investigative task that will require multiple skill sets covering multiple content areas
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{grades}{%
+\section{Grades}\label{grades}}
+
+Final grades for each semester will be calculated as follows:
+
+\begin{itemize}
+\tightlist
+\item
+  10\% Midterm
+\item
+  20\% Final Exam
+\item
+  20\% Homework
+\item
+  10\% Participation
+\item
+  10\% Free-Response Questions
+\item
+  10\% R Lab Assignments
+\item
+  10\% First Monthly Exam
+\item
+  10\% Second Monthly Exam
+\end{itemize}
+
+\hypertarget{course-exams}{%
+\subsection{Course Exams}\label{course-exams}}
+
+Each semester, the math department will administer two monthly exams, a midterm, and a final exam. Once the exam dates are finalized, they will be listed in the \href{https://ap-statistics.github.io/calendar/2019-2020.html}{Calendar} section of the course website.
+
+\hypertarget{homework}{%
+\subsection{Homework}\label{homework}}
+
+Homework assignment for Statistics will be listed in the \href{https://ap-calculus.github.io/schedule}{Schedule} section of the course website, respectively. Unless otherwise stated, assignments are due the following school day.
+
+General Homework Guidelines:
+
+\begin{itemize}
+\item
+  Write your name, date, and period on the top-right corner of the first page. For subsequent pages, place just your name (without date/period) on the top-right corner.
+\item
+  On the first page, write down the assignment as the title. Example: Section 1.1 (pages 10-11, \#1-36 odd)
+\item
+  For short questions, copy down the entire problem. For longer questions, outline the problem with enough information so that you can understand the question without referring back to the textbook. The point of copying down short problems and outlining longer problems is to allow you to reference your homework problems easily for review and exam preparation.
+\end{itemize}
+
+Homework will be collected on randomly selected days. You will receive full credit for all collected homework as long as you write your own homework solutions and make complete corrections with a pen when we go over solutions in class.
+
+General Lab Guidelines:
+
+\begin{itemize}
+\tightlist
+\item
+  Once the lab guidelines are finalized, I will go over them during the first lab session and update the syllabus to include this information in this section.
+\end{itemize}
+
+\hypertarget{participation}{%
+\subsection{Participation}\label{participation}}
+
+During class, you will have the opportunity to solve problems on the board. This is not only good practice for verbal communication of mathematics but also a great way to solidify your understanding of concepts. After each time at the board, you will sign your name on a sheet so I can tally your participation frequency. As long as you maintain regular participation, you will receive full points in this area.
+
+\hypertarget{free-response-questions}{%
+\subsection{Free Response Questions}\label{free-response-questions}}
+
+In class, we will work on previous free response questions that relate to the concepts that we cover in each unit. To simulate the scoring process, I will ask students to exchange free response papers to grade as I go through the solutions and assignment of points. After you receive your scored free response paper, you should use a pen with a different color to correct your mistakes to receive full credit.
+
+\hypertarget{policies}{%
+\section{Policies}\label{policies}}
+
+\hypertarget{integrity}{%
+\subsection{Integrity}\label{integrity}}
+
+Honesty is the best policy. We will conduct this course on an honor system. This means that we will trust each other to maintain integrity. Please do not cheat or aid others in cheating.
+
+\hypertarget{collaboration-policy}{%
+\subsection{Collaboration Policy}\label{collaboration-policy}}
+
+While I highly encourage students to help each other in this course, please observe the following guidelines:
+
+\begin{itemize}
+\tightlist
+\item
+  First try to work on problems on your own. Give yourself time to think through problems.
+\item
+  If you require additional help, please feel free to work collaboratively with other students on a separate piece of paper. In the process of helping each other, please do not rush through the steps to reach a solution. Allow students struggling with the problem more time to think through each step with minor hints so that they can arrive at the final solution on their own.
+\item
+  At the end of collaboration, you should still write your own homework solutions from start to finish. Do not short-change your own learning process by copying answers.
+\end{itemize}
+
+\textbf{Exception to the Collaboration Policy:} Please work independently on the AP progress check multiple-choice questions, which you will have to submit online via AP Classroom at the end of each unit. This is an opportunity for me to determine how much each student has learned at the end of each unit.
+
+\hypertarget{timeline-tentative-dates}{%
+\section{Timeline (Tentative Dates)}\label{timeline-tentative-dates}}
+
+\begin{longtable}[]{@{}llr@{}}
+\toprule
+Unit & Topic & Dates\tabularnewline
+\midrule
+\endhead
+1 & One-Variable Data & 9/2--9/11\tabularnewline
+2 & Two-Variable Data (first semester topics) & 9/12--9/16\tabularnewline
+3 & Collecting Data & 9/19--9/30\tabularnewline
+4 & Probability, Random Variables, and Probability Distributions & 10/10--10/29\tabularnewline
+5 & Sampling Distributions & 10/30--11/22\tabularnewline
+6 & Inference for Categorical Data: Proportions & 12/11--12/24\tabularnewline
+7 & Inference for Quantitative Data: Means & 2/9--2/24\tabularnewline
+8 & Inference for Quantitative Data: Chi-Square & 2/5--3/15\tabularnewline
+2 & Two-Variable Data (second semester topics) & 3/16--3/31\tabularnewline
+9 & Inference for Quantitative Data: Slopes & 4/1--4/20\tabularnewline
+& Practice Exams \& Free-Response Questions & 4/21--5/14\tabularnewline
+& AP Exam & 5/15\tabularnewline
+\bottomrule
+\end{longtable}
+
+%manually set hanging indents for references
+%\pdfbookmark[0]{\indexname}{Index}
+%\printindex
+
+
+\end{document}

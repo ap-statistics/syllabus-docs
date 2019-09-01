@@ -1,0 +1,83 @@
+--- 
+title: "AP^&reg;^ Statistics Syllabus"
+author: ""
+date: "2019--2020"
+site: bookdown::bookdown_site
+output: 
+  bookdown::gitbook:
+    toc_depth: 2
+    config:
+      sharing: null
+        # facebook: false
+        # twitter: false
+documentclass: article
+fontsize: 12pt
+#toc: no
+bibliography: [book.bib, packages.bib]
+csl: apa.csl
+link-citations: yes
+github-repo: ap-statistics/syllabus-docs
+description: "This notebook includes a syllabus and detailed course schedule for AP Statistics."
+always_allow_html: yes
+classoption: fleqn
+subparagraph: yes
+# classoption: twocolumn
+---
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache=FALSE, dev='png')
+mon <- as.Date("2016-08-15")
+# fri <- as.Date("2016-01-08")
+
+advdate <- function(obj, adv) {
+ tmon <- obj + 7*(adv-1)
+ tfri <- obj + 4 + 7*(adv-1)
+ tmon <- format(tmon, format="%m/%d")
+ tfri <- format(tfri, format="%m/%d")
+ zadv <- sprintf("%02d", adv)
+ tmp <- paste("Week ",zadv,sep='',", ", tmon," - ",tfri)
+ return(tmp)
+}
+
+library(RefManageR)
+# library(knitcitations)
+# library(rcrossref)
+bib <- ReadBib("book.bib")
+BibOptions(bib.style = "authoryear", style="markdown", first.inits=FALSE, max.names = 4, check.entries = FALSE)
+
+#https://stackoverflow.com/questions/46260431/include-the-text-of-a-bibentry-in-the-rmarkdown-text-body-output
+library(bibtex)
+biblio <- bibtex::read.bib(file="book.bib")
+```
+# Course Description
+
+AP^&reg;^ Statistics is a one-year course that covers descriptive statistics, probability theory, and statistical inference. In addition to TI-84 calculator sessions that align with the AP^&reg;^ Statistics curriculum, this course will also include supplementary R lab sessions to introduce students to statistical programming.
+
+
+# Contact Information
+
+**Teacher**: Mr. Li
+
+**Course Website**: [https://ap-statistics.github.io](https://ap-statistics.github.io){target="_blank"}
+
+**Office Hours**: [https://ap-statistics.github.io/#officehours](https://ap-statistics.github.io/#officehours){target="_blank"}
+
+  * You are welcome to stop by anytime during scheduled office hours without an appointment.
+  * If I need to reschedule office hours, I will send an e-mail to the class.
+  * If you cannot make it to my office hours, please [schedule an appointment](https://ap-statistics.github.io/#officehours){target="_blank"}. If none of the time slots work for you, check with me after class so we can arrange a time to meet.
+  
+# Course Objectives
+
+1. Develop mastery in descriptive and inference statistics.
+2. Learn all relevant TI-84 calculator functions for the AP exam.
+3. Gain exposure to statistical programming using R.
+
+
+

@@ -1,0 +1,103 @@
+# Resources
+
+## Course Textbook
+
+```{r, results='asis', echo = FALSE}
+bib["openintro"]
+```
+
+## Graphing Calculator
+
+Required: Choose one of the Texas Instruments TI-83/84 series (including TI-83 Plus, TI-84 Plus, TI-84 Silver Edition, TI-84 Plus CE)
+
+I will be using **TI-84 Plus** for in-class demonstrations, but any one of the TI-83/84 models should be similar enough to follow along in class. Check this [link](https://brownmath.com/ti83/diff8384.htm#PlusSilver) to see the differences among the TI-83/84 models.
+
+## AP Classroom
+
+Visit [https://collegeboard.org/joinapclass](https://collegeboard.org/joinapclass){target="_blank"} for instructions on joining the AP class section for this class.
+
+* Log onto [https://myap.collegeboard.org](https://myap.collegeboard.org){target="_blank"} with your College Board account.
+
+* Enter the join code that you will receive in class.
+
+## Recommended Reference
+
+```{r results='asis', echo = FALSE}
+bib["barrons"]
+```
+
+If you would like more practice and preparation for the AP exam, the text above is an excellent reference. However, you are not required to purchase this text.
+
+# AP Exam
+
+[2020 AP Exam Schedule](https://apcentral.collegeboard.org/courses/exam-dates-and-fees/exam-dates-2020){target="_blank"}
+
+  * AP Statistics: May 15, 2020 (noon local time) 
+
+[Exam Format](https://apcentral.collegeboard.org/courses/ap-statistics/exam){target="_blank"}
+
+  * Section 1 (50%): 45 multiple-choice questions (1 hour, 30 min.)
+
+  * Section 2 (50%): 6 free-response questions
+      - Part A: 5 questions with focus areas on data collection, data exploration, probability and sampling distributions, inference. One of the five questions will involve on two or more of the focus areas.
+      - Part B: investigative task that will require multiple skill sets covering multiple content areas
+
+# Grades
+
+Final grades for each semester will be calculated as follows:
+
+* 10% Midterm
+* 20% Final Exam
+* 20% Homework
+* 10% Participation
+* 10% Free-Response Questions
+* 10% R Lab Assignments
+* 10% First Monthly Exam
+* 10% Second Monthly Exam
+
+## Course Exams
+
+Each semester, the math department will administer two monthly exams, a midterm, and a final exam. Once the exam dates are finalized, they will be listed in the [Calendar](https://ap-statistics.github.io/calendar/2019-2020.html){target="_blank"} section of the course website.
+
+## Homework
+
+Homework assignment for Statistics will be listed in the [Schedule](https://ap-calculus.github.io/schedule){target="_blank"} section of the course website, respectively. Unless otherwise stated, assignments are due the following school day.
+
+General Homework Guidelines:
+
+* Write your name, date, and period on the top-right corner of the first page. For subsequent pages, place just your name (without date/period) on the top-right corner.
+
+* On the first page, write down the assignment as the title. Example: Section 1.1 (pages 10-11, #1-36 odd) 
+
+* For short questions, copy down the entire problem. For longer questions, outline the problem with enough information so that you can understand the question without referring back to the textbook. The point of copying down short problems and outlining longer problems is to allow you to reference your homework problems easily for review and exam preparation.
+
+Homework will be collected on randomly selected days. You will receive full credit for all collected homework as long as you write your own homework solutions and make complete corrections with a pen when we go over solutions in class.
+
+General Lab Guidelines:
+
+* Once the lab guidelines are finalized, I will go over them during the first lab session and update the syllabus to include this information in this section.
+
+## Participation
+
+During class, you will have the opportunity to solve problems on the board. This is not only good practice for verbal communication of mathematics but also a great way to solidify your understanding of concepts. After each time at the board, you will sign your name on a sheet so I can tally your participation frequency. As long as you maintain regular participation, you will receive full points in this area.
+
+## Free Response Questions
+
+In class, we will work on previous free response questions that relate to the concepts that we cover in each unit. To simulate the scoring process, I will ask students to exchange free response papers to grade as I go through the solutions and assignment of points. After you receive your scored free response paper, you should use a pen with a different color to correct your mistakes to receive full credit.
+
+# Policies
+
+## Integrity
+
+Honesty is the best policy. We will conduct this course on an honor system. This means that we will trust each other to maintain integrity. Please do not cheat or aid others in cheating.
+
+## Collaboration Policy
+
+While I highly encourage students to help each other in this course, please observe the following guidelines:
+
+  * First try to work on problems on your own. Give yourself time to think through problems.
+  * If you require additional help, please feel free to work collaboratively with other students on a separate piece of paper. In the process of helping each other, please do not rush through the steps to reach a solution. Allow students struggling with the problem more time to think through each step with minor hints so that they can arrive at the final solution on their own.
+  * At the end of collaboration, you should still write your own homework solutions from start to finish. Do not short-change your own learning process by copying answers.
+  
+**Exception to the Collaboration Policy:** Please work independently on the AP progress check multiple-choice questions, which you will have to submit online via AP Classroom at the end of each unit. This is an opportunity for me to determine how much each student has learned at the end of each unit.
+

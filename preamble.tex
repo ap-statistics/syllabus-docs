@@ -1,0 +1,61 @@
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+%Allow for more levels in bullet lists
+%https://github.com/Witiko/markdown/issues/2
+%https://tex.stackexchange.com/questions/41408/a-five-level-deep-list
+\usepackage{enumitem}
+\setlistdepth{20}
+\renewlist{itemize}{itemize}{20}
+% initially, use dots for all levels
+\setlist[itemize]{label=$\cdot$}
+
+% customize the first 3 levels
+\setlist[itemize,1]{label=\textbullet}
+\setlist[itemize,2]{label=--}
+\setlist[itemize,3]{label=*}
+
+\usepackage{multicol}
+
+\usepackage{bibentry}
+
+% \setcounter{tocdepth}{0}
+% \setcounter{secnumdepth}{0}
+
+%YAML in index.Rmd: subparagraph: yes
+%https://stackoverflow.com/questions/42916124/not-able-to-use-titlesec-with-markdown-and-pandoc
+\usepackage{titlesec}
+\titleformat{\section}
+   {\normalfont\fontsize{18}{20}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+   {\normalfont\fontsize{16}{18}\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+   {\normalfont\fontsize{14}{16}\bfseries}{\thesubsubsection}{1em}{}
+% \titleformat{\subsubsection}
+%    {\normalfont\fontsize{14}{16}\bfseries\sffamily}{}{1em}{}
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkbordercolor = {white},
+    linkcolor = {black},
+    citecolor = {black},
+    urlcolor = {blue},
+    citecolor = {blue},
+    anchorcolor = {blue},
+    bookmarksopen = false,
+    bookmarksdepth=4
+}
+
+
+
+%https://bookdown.org/yihui/bookdown/latex-index.html
+%\usepackage{makeidx}
+%\makeindex

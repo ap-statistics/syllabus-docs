@@ -1,0 +1,19 @@
+<!-- \newpage -->
+
+# Timeline (Tentative Dates)
+
+| Unit| Topic                                            | Dates           
+|-----|--------------------------------------------------|-------------:
+| 1 | One-Variable Data                                  | 9/2--9/11    
+| 2 | Two-Variable Data (first semester topics)          | 9/12--9/16   
+| 3 | Collecting Data                                    | 9/19--9/30
+| 4 | Probability, Random Variables, and Probability Distributions   | 10/10--10/29 
+| 5 | Sampling Distributions                             | 10/30--11/22
+| 6 | Inference for Categorical Data: Proportions        | 12/11--12/24 
+| 7 | Inference for Quantitative Data: Means             | 2/9--2/24    
+| 8 | Inference for Quantitative Data: Chi-Square        | 2/5--3/15 
+| 2 | Two-Variable Data (second semester topics)         | 3/16--3/31
+| 9 | Inference for Quantitative Data: Slopes            | 4/1--4/20  
+|   | Practice Exams & Free-Response Questions           | 4/21--5/14      
+|   | AP Exam                                            | 5/15         
+
