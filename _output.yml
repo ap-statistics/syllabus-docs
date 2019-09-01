@@ -4,7 +4,7 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="https://ap-statistics.github.io">AP<sup>&reg;</sup> Calculus</a></li>
+        <li><a href="https://ap-statistics.github.io">AP<sup>&reg;</sup> Statistics</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     edit:
